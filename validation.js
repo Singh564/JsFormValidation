@@ -56,7 +56,7 @@ let nameErr =ageErr=genderErr = emailErr= passwordErr =confirmpasswordErr=phoneE
 
 // Name validation 
 
-if(student_name ==''){
+if(student_namen ==''){
     Print_Err('nameErr','Please Enter your name')
 }
 
@@ -65,7 +65,7 @@ else{if(regname.test(student_name)==false){
 }
 else{
     nameErr=false;
-    Print_Err('nameErr','Please Enter Your Name')}
+    Print_Err('nameErr','')}
 }
 
 
