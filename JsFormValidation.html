@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_Form_Validation</title>
+   <link rel="stylesheet" href="FormValidationJs.css">
+</head>
+<body>
+    <form  method="post" onsubmit= "return Validate()" name="form">
+        <h2>Registraion Form</h2>
+        <div class="row">
+            <input type="text" name="name" id="" placeholder="Enter Name*">
+            <p id="nameErr" class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <input type="number" name="age" id="" placeholder="Enter Age*">
+            <p id="ageErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+             <div id="Gender">
+            <div><input type="radio" name="gender" id="" value="male"><span>Male</span></div>
+            <div><input type="radio" name="gender" id="" value="female"><span>Female</span></div>
+            </div>
+            <p id="genderErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <input type="text" name="email" id="" placeholder="Enter Email*">
+            <p id="emailErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <span style="float: right; position: relative; top:30px; right:7px; font-size: 14px;"><input type="checkbox" onclick="toggle_Password()" id="">Show Password</span>
+            <input type="password" name="password" id="" placeholder="Enter Password*">
+            <p id="passwordErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <input type="password" name="confirmpassword" id="" placeholder="Confirm Password*">
+            <p id="confirmpasswordErr"></p>
+            
+        </div>
+        <div class="row">
+            <input type="text" name="phone" id="" placeholder="Enter Phone*">
+            <p id="phoneErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <select name="country" id="">
+                <option value="" style="color:rgba(0, 0, 0, 0.74);">Select Country</option>
+                <option value="india">India</option>
+                <option value="Usa">Usa</option>
+                <option value="Newzealand">Newzealand</option>
+            </select>
+            <p id="countryErr"  class="Errmsg"></p>
+        </div>
+        <div class="row">
+            <input type="submit" value="Register">
+        </div>    
+    </form>
+</body>
+<script src="validation.js">
+    </script>
+</html>
